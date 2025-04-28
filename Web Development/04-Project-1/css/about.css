@@ -1,0 +1,9 @@
+.about {
+    padding: 2.5rem;
+    font-size: large;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }

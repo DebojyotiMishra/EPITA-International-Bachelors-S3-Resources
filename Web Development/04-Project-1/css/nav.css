@@ -1,0 +1,116 @@
+/* navbar */
+/* ============== Default styles for desktop ============== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+
+.navbar .menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar .menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.nav-menu-item {
+  list-style: none;
+}
+
+.hamburger,
+.close-menu {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* ============== Responsive styles for mobile ============== */
+@media (max-width: 768px) {
+  .navbar .menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-top: 4rem;
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+    z-index: 10;
+    text-align: left;
+    padding-left: 3rem;
+  }
+
+  .navbar .menu.open {
+    display: flex;
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    z-index: 15;
+  }
+
+  .close-menu {
+    display: none;
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 15;
+    color: white;
+  }
+
+  .menu.open ~ .close-menu {
+    display: block;
+  }
+
+  .hamburger.hide {
+    display: none;
+  }
+
+  .navbar .menu a {
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInMenu 0.5s ease-in-out forwards;
+  }
+
+  @keyframes fadeInMenu {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .nav-menu-item:nth-child(1) a {
+    animation-delay: 0.2s;
+  }
+  .nav-menu-item:nth-child(2) a {
+    animation-delay: 0.4s;
+  }
+  .nav-menu-item:nth-child(3) a {
+    animation-delay: 0.6s;
+  }
+}

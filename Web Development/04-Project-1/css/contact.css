@@ -1,0 +1,50 @@
+.contact-content {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact {
+  padding: 2.5rem;
+  font-size: large;
+  max-width: 1000px;
+  margin: auto;
+  gap: 2rem;
+}
+
+iframe {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  max-width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #dedede;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+  border: none;
+  padding: 0.5rem 1rem;
+}

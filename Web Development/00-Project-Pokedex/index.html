@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite App</title>
+		<meta name="keywords" content="HTML, Pokemon, Pokemon Search" />
+		<meta name="description" content="Find out about avery and any pokemon you want!" />
+		<meta name="author" content="Debojyoti Mishra" />
+	</head>
+	<body>
+		<main class="main">
+			<header>
+				<div class="container">
+					<div class="logo-wrapper">
+						<img src="assets/pokeball.svg" alt="pokeball logo">
+						<h1>Pokedex Search</h1>
+					</div>
+
+					<div class="search-wrapper">
+						<div class="search-container">
+							<img src="assets/search.svg" alt="search button" class="search-icon">
+							<input type="text" id="search-input" placeholder="Search for a Pokemon" class="border-0">
+							<img src="assets/cross.svg" class="cross-btn">
+						</div>
+					</div>
+
+					<div class="sort-wrapper">
+						<div class="sort-container">
+							<img src="assets/sorting.svg" alt="sort" class="sort-icon" id="sort-icon">
+						</div>
+					</div>
+
+					<div class="filter-wrapper">
+						<p>Sort by:</p>
+						<div class="filer-container">
+							<div>
+								<input type="radio" name="filters" id="name" value="name" checked>
+								<label for="name">Name</label>
+							</div>
+							<div>
+								<input type="radio" name="filters" id="number" value="number">
+								<label for="number">Number</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section class="pokemon-list">
+				<div class="container">
+					<div class="list-wrapper">
+
+					</div>
+				</div>
+				<div class="not-found-message">
+					<h2>No Pokemon Found</h2>
+				</div>
+			</section>
+		</main>
+		<script type="module" src="/main.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>

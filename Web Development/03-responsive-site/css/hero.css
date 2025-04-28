@@ -1,0 +1,14 @@
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column;
+}
+
+
+.hero button{
+    padding: 1em;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+}
